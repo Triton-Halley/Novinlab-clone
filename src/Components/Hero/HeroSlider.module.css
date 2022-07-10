@@ -1,3 +1,7 @@
+.sliderContainer {
+  position: relative;
+  z-index: 10;
+}
 .silde {
   position: relative;
 }

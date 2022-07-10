@@ -15,6 +15,7 @@ const HeroSlider = () => {
 
   return (
     <Splide
+      className={classes.sliderContainer}
       options={{
         rewind: true,
         gap: "1rem",

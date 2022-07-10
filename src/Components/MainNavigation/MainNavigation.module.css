@@ -24,16 +24,15 @@
   align-items: center;
   justify-content: flex-end;
   list-style: none;
+  gap: 2rem;
 }
 .nav ul li {
-  margin-left: 15px;
-
   transition: all 0.3s ease 0s;
 }
 
 .nav ul li a {
   text-decoration: none;
-  font-size: 1.7rem;
+  font-size: 1.3rem;
   color: #333;
   cursor: pointer;
 }
