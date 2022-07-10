@@ -28,6 +28,8 @@
 }
 .nav ul li {
   margin-left: 15px;
+
+  transition: all 0.3s ease 0s;
 }
 
 .nav ul li a {
@@ -35,8 +37,30 @@
   color: #333;
   cursor: pointer;
 }
-.nav ul li a:hover {
-  border-bottom: 0.5rem dotted #1e9984;
+.nav ul li {
+  position: relative;
+}
+.nav ul li:hover a::before {
+  opacity: 1;
+  text-shadow: 10px 0 #1e9984, -10px 0 #1e9984;
+  color: #1e9984;
+}
+.nav ul li a::before {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  color: transparent;
+  content: "•";
+  text-shadow: 0 0 transparent;
+  font-size: 1.4em;
+  -webkit-transition: text-shadow 0.3s, color 0.3s;
+  -moz-transition: text-shadow 0.3s, color 0.3s;
+  transition: text-shadow 0.3s, color 0.3s;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  transform: translateX(-50%);
+  pointer-events: none;
+  opacity: 0;
 }
 .btn a {
   text-decoration: none;
@@ -50,5 +74,5 @@
 }
 
 .nav ul li a.active {
-  border-bottom: 0.5rem dotted #1e9984;
+  color: #1e9984;
 }
