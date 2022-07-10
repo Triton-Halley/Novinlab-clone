@@ -1,0 +1,54 @@
+.silde {
+  position: relative;
+}
+
+.content-slide1 {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 45vw;
+  height: 50vh;
+  text-align: right;
+  direction: rtl;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-10vw, 30vh);
+  font-size: 1.5rem;
+}
+
+.btn {
+  max-width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #fee5cf;
+  padding: 0.5rem;
+  margin-top: 2rem;
+  /* margin-right: 20px; */
+  border-radius: 0.3rem;
+}
+
+.btn span {
+  transition: all 0.3s;
+}
+.btn:hover span {
+  margin-right: 1rem;
+}
+.btn a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: #1e9984;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #1e9984;
+  margin-right: 0.4rem;
+}
+.address {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}

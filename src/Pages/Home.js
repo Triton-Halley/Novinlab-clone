@@ -1,5 +1,10 @@
+import HeroSlider from "../Components/Hero/HeroSilder";
 const Home = () => {
-  return <>{/* <MainNavigation /> */}</>;
+  return (
+    <>
+      <HeroSlider />
+    </>
+  );
 };
 
 export default Home;
