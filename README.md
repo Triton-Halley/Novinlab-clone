@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Getting Started with Novinlab Clone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is clone of Novinlab.net website that design and built by me with wordpress , I want to relese a react.js version of this website
 
 ## Available Scripts
 
