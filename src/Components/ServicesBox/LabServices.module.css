@@ -1,0 +1,51 @@
+.container {
+  width: 1500px;
+  margin-right: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.ContentContainer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.SectionHeaderContainer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 3rem;
+}
+.SectionHeader {
+  direction: rtl;
+}
+.SectionHeader h3 {
+  font-size: 1.5rem;
+}
+.line {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.line div {
+  width: 50px;
+  height: 2px;
+  background-color: black;
+}
+.line p {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+.ServiceBoxContainer {
+  max-width: 1400px;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.mainContainer {
+  margin-top: 5rem;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
