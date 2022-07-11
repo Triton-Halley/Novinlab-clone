@@ -1,6 +1,6 @@
 # Getting Started with Novinlab Clone
 
-This project is clone of Novinlab.net website that design and built by me with wordpress , I want to relese a react.js version of this website
+This project is clone of http://novinlab.net/ website that design and built by me with wordpress , I want to relese a react.js version of this website
 
 ## Available Scripts
 
