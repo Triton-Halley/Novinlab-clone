@@ -1,0 +1,14 @@
+.detailContainer {
+  align-self: stretch;
+  text-align: right;
+}
+.detailContainer img {
+  width: 100%;
+}
+.detailContainer strong {
+  font-size: 1.3rem;
+}
+.detailContainer p {
+  font-size: 1rem;
+  font-weight: 100;
+}
