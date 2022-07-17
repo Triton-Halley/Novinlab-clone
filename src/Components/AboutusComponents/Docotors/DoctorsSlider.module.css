@@ -1,0 +1,10 @@
+.sliderContainer {
+  width: 70%;
+  height: 50vh;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
