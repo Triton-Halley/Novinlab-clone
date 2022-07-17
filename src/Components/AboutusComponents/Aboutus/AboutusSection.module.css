@@ -1,0 +1,29 @@
+.aboutUs {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.AboutUSContainer {
+  width: 80%;
+  display: flex;
+  align-items: center;
+}
+.aboutUsImage img {
+  width: 500px;
+}
+.AboutUsContent {
+  direction: rtl;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.AboutUsContent h1 {
+  font-size: 2rem;
+}
+
+.AboutUsContent p {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
