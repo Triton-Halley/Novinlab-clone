@@ -1,0 +1,82 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 3rem;
+  padding: 0 40px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 5px;
+}
+.posAbsolute {
+  width: 90%;
+  margin-top: 50px;
+  position: absolute;
+}
+.posSticky {
+  position: fixed;
+  width: 100%;
+  margin-top: 0;
+}
+.navigationContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.logo {
+  max-width: max-content;
+}
+.logo img {
+  max-width: 6rem;
+}
+.menu {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1.5rem;
+}
+.nav ul li a.active {
+  color: #1e9984;
+}
+.nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  list-style: none;
+  gap: 2rem;
+}
+.nav ul li {
+  transition: all 0.3s ease 0s;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: #333;
+  cursor: pointer;
+}
+.nav ul li {
+  position: relative;
+}
+.nav ul li:hover a::before {
+  opacity: 1;
+  text-shadow: 10px 0 #1e9984, -10px 0 #1e9984;
+  color: #1e9984;
+}
+.nav ul li a::before {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  color: transparent;
+  content: "•";
+  text-shadow: 0 0 transparent;
+  font-size: 1.4em;
+  -webkit-transition: text-shadow 0.3s, color 0.3s;
+  -moz-transition: text-shadow 0.3s, color 0.3s;
+  transition: text-shadow 0.3s, color 0.3s;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  transform: translateX(-50%);
+  pointer-events: none;
+  opacity: 0;
+}

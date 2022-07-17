@@ -6,11 +6,9 @@ import ContactUS from "./Pages/ContactUs";
 import Faq from "./Pages/FAQ";
 import NotFound from "./Pages/NotFount";
 import Survey from "./Pages/Survey";
-import MainNavigation from "./Components/HomePageComponents/MainNavigation/MainNavigation";
 function App() {
   return (
     <>
-      <MainNavigation />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<AboutUs />} />
