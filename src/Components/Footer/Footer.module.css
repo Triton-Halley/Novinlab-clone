@@ -1,0 +1,61 @@
+.FooterContainer {
+  background-color: #1a353c;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  padding: 30px;
+  gap: 100px;
+}
+
+.information {
+  direction: rtl;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 5px;
+  font-size: 1rem;
+}
+.information .address {
+  width: 500px;
+}
+.information img {
+  width: 100px;
+}
+
+.information ion-icon {
+  font-size: 1.4rem;
+}
+.information div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.information div a {
+  text-decoration: none;
+  color: #fff;
+}
+.map {
+}
+
+.socialMedia {
+  align-self: stretch;
+  color: #fff;
+}
+
+.socialMedia strong {
+  font-size: 2rem;
+}
+
+.socialMedia div {
+  direction: rtl;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.socialMedia div a {
+  color: #fff;
+  font-size: 2rem;
+}

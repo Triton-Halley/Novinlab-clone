@@ -1,6 +1,6 @@
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import { useRef } from "react";
-import "@splidejs/react-splide/css";
+import "@splidejs/splide/css";
 import slideImage1 from "../../assets/banner.jpg";
 import slideImage2 from "../../assets/home4-1.jpg";
 import location from "../../assets/icons/location.png";
@@ -8,7 +8,6 @@ import arrowLeft from "../../assets/icons/arrow-left.png";
 import classes from "./HeroSlider.module.css";
 const HeroSlider = () => {
   const sliderSplide = useRef();
-  const splide = sliderSplide.current;
 
   // const splide = new Splide(".splide");
   // console.log(splide);
