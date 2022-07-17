@@ -1,6 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
 import classes from "./MainNavigation.module.css";
-import logo from "../../assets/Novin-logo.png";
+import logo from "../../../assets/Novin-logo.png";
 const MainNavigation = () => {
   return (
     <>

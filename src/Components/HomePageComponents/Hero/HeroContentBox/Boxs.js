@@ -1,7 +1,7 @@
 import classes from "./Boxs.module.css";
-import laboratoryIcon from "../../../assets/icons/laboratory.png";
-import bloodSampleIcon from "../../../assets/icons/‌blood-sample.png";
-import doctorIcon from "../../../assets/icons/doctor.png";
+import laboratoryIcon from "../../../../assets/icons/laboratory.png";
+import bloodSampleIcon from "../../../../assets/icons/‌blood-sample.png";
+import doctorIcon from "../../../../assets/icons/doctor.png";
 
 const BoxContent = () => {
   return (

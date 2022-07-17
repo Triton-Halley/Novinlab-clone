@@ -1,7 +1,7 @@
 import classes from "./LatestPostsContainer.module.css";
 import Post from "./Post";
 
-import placeholderPic from "../../assets/pics/placeholder.jpg";
+import placeholderPic from "../../../assets/pics/placeholder.jpg";
 const DUMMY_DATA = [
   {
     id: "p1",

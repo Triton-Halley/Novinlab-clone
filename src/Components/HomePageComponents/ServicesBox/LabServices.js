@@ -1,11 +1,11 @@
 import ServiceBox from "./ServiceBox";
 import classes from "./LabServices.module.css";
-import ChemicalIcon from "../../assets/icons/chemical.png";
-import BabyIcon from "../../assets/icons/baby.png";
-import BloodIcon from "../../assets/icons/blood.png";
-import ChemicalTestIcon from "../../assets/icons/chemicalTest.png";
-import MicroscopeIcon from "../../assets/icons/microscope.png";
-import ReproductionIcon from "../../assets/icons/reproduction.png";
+import ChemicalIcon from "../../../assets/icons/chemical.png";
+import BabyIcon from "../../../assets/icons/baby.png";
+import BloodIcon from "../../../assets/icons/blood.png";
+import ChemicalTestIcon from "../../../assets/icons/chemicalTest.png";
+import MicroscopeIcon from "../../../assets/icons/microscope.png";
+import ReproductionIcon from "../../../assets/icons/reproduction.png";
 
 const DUMMY_DATA = [
   {

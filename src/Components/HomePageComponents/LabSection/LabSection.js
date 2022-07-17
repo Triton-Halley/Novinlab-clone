@@ -1,16 +1,15 @@
 import { useState } from "react";
 import ShowDetail from "./ShowDetail";
 // images
-import Scanning from "../../assets/icons/screening.png";
-import serum from "../../assets/icons/serum.png";
-import biochemistry from "../../assets/icons/biochemistry.png";
-import hormones from "../../assets/icons/hormones.png";
-import microscope from "../../assets/icons/microscope-1.png";
-import bloodCells from "../../assets/icons/bloodCells.png";
+import Scanning from "../../../assets/icons/screening.png";
+import serum from "../../../assets/icons/serum.png";
+import biochemistry from "../../../assets/icons/biochemistry.png";
+import hormones from "../../../assets/icons/hormones.png";
+import microscope from "../../../assets/icons/microscope-1.png";
+import bloodCells from "../../../assets/icons/bloodCells.png";
 
-import pic1 from "../../assets/pics/emin-baycan-3FtypNvSPn0-unsplash.jpg";
-import pic2 from "../../assets/pics/national-cancer-institute-DYQfoftWGXw-unsplash.jpg";
-import pic3 from "../../assets/pics/reproductive-health-supplies-coalition-fgqLiOKNjU8-unsplash.jpg";
+import pic2 from "../../../assets/pics/national-cancer-institute-DYQfoftWGXw-unsplash.jpg";
+import pic3 from "../../../assets/pics/reproductive-health-supplies-coalition-fgqLiOKNjU8-unsplash.jpg";
 
 import classes from "./LabSection.module.css";
 const DUMMY_DATA = [
