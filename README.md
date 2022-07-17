@@ -14,4 +14,9 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
+#Home page Hero Section : 
 
+
+
+
+![Novinlab-react-relese-home-screenshot](https://user-images.githubusercontent.com/61544097/179403711-f8d9c530-10bc-4a36-b24e-960a02e5f3dd.png)
