@@ -19,7 +19,7 @@ const DUMMY_DATA = [
     title: "بخش غربال گری",
     description: "در این بخش تستهای  سلامت جنین خانم های باردار انجام می شود ",
     imgSrc: Scanning,
-    imgSource: pic1,
+    imgSource: pic2,
   },
   {
     id: "s2",
@@ -59,7 +59,7 @@ const DUMMY_DATA = [
     description:
       "در این بخش انجام تعدادی از تست های بیوشیمیایی مثل اوره ، کراتین ، قند و چربی ، و ... توسط دستگاه هتیاچی انجام می شود.",
     imgSrc: biochemistry,
-    imgSource: pic1,
+    imgSource: pic2,
   },
 ];
 

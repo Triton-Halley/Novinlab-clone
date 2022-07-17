@@ -1,11 +1,14 @@
 .sliderContainer {
+  width: 100%;
   position: relative;
   z-index: 10;
 }
 .silde {
   position: relative;
 }
-
+.slide img {
+  width: 100%;
+}
 .content-slide1 {
   display: flex;
   flex-direction: column;

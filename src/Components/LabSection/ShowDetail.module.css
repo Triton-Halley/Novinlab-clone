@@ -1,4 +1,5 @@
 .detailContainer {
+  direction: rtl;
   align-self: stretch;
   text-align: right;
 }
