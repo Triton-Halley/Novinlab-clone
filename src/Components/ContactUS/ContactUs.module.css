@@ -1,0 +1,38 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  background-image: url("../../assets//contact-bg.jpg");
+  background-position: center;
+  background-size: contain;
+}
+.contactUs {
+  width: 50%;
+  border-radius: 10px;
+  color: #fff;
+  direction: rtl;
+  padding: 50px;
+  height: max-content;
+  background-color: #1a353c;
+}
+.contactUs ul {
+  list-style: none;
+}
+.contactUs ul li {
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon {
+  font-size: 2rem;
+}
+
+.instagram a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+}
