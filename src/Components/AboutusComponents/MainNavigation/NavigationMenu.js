@@ -13,13 +13,10 @@ class NavigationMenu1 extends Component {
     };
   }
   componentDidMount() {
-    console.log(this.myRef);
     let observer = new IntersectionObserver(
       (entries, observer) => {
         const [entry] = entries;
-        console.log(entry.isIntersecting);
         if (!entry.isIntersecting) {
-          console.log("not see");
           this.setState({
             headerClassesArray: [classes.header, classes.posSticky],
           });
