@@ -9,7 +9,7 @@
   box-sizing: border-box;
 }
 body {
-  height: 1000vh;
+  /* height: 1000vh; */
   font-family: "IranSans";
   font-size: 62.5%;
 }

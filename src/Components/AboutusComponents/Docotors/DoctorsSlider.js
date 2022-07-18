@@ -1,5 +1,5 @@
 import { Splide, SplideSlide } from "@splidejs/react-splide";
-import "@splidejs/react-splide/css";
+// import "@splidejs/react-splide/css";
 import classes from "./DoctorsSlider.module.css";
 import doctor1 from "../../../assets/Doctors/doc_1.jpg";
 import doctor2 from "../../../assets/Doctors/doc_2.jpg";
@@ -65,6 +65,15 @@ const DUMMY_DATA = [
 const DoctorsSlider = () => {
   return (
     <div className={classes.container}>
+      <div className={classes.header}>
+        <h2>پزشکان متخصص ما</h2>
+        <p>
+          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+          از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و
+          سطرآنچنان که لازم است.
+        </p>
+      </div>
+
       <Splide
         className={classes.sliderContainer}
         options={{
