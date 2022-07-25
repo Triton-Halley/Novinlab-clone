@@ -4,9 +4,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
   padding: 30px;
-  gap: 100px;
+  gap: 50px;
 }
 
 .information {
@@ -19,7 +18,7 @@
   font-size: 1rem;
 }
 .information .address {
-  width: 500px;
+  width: 100%;
 }
 .information img {
   width: 100px;
@@ -41,8 +40,10 @@
 }
 
 .socialMedia {
+  width: 20%;
   align-self: stretch;
   color: #fff;
+  direction: rtl;
 }
 
 .socialMedia strong {
@@ -58,4 +59,15 @@
 .socialMedia div a {
   color: #fff;
   font-size: 2rem;
+}
+
+@media (max-width: 1500px) {
+  .socialMedia strong {
+    font-size: 1.7rem;
+  }
+}
+@media (max-width: 1400px) {
+  .socialMedia strong {
+    font-size: 1.3rem;
+  }
 }

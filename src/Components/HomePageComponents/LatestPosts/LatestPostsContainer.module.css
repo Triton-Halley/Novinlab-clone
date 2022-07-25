@@ -1,14 +1,13 @@
 .LatestPostsContainer {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  /* max-width: 1500px; */
+  gap: 30px;
   margin-top: 200px;
   background-color: #f9f8ff;
   padding: 40px;
-  gap: 30px;
 }
 .LatestPostsContainer strong {
   font-size: 1.5rem;
@@ -19,4 +18,15 @@
   align-items: center;
   justify-content: center;
   gap: 30px;
+}
+
+@media (max-width: 1300px) {
+  .PostsContainer {
+    gap: 60px;
+  }
+}
+@media (max-width: 1200px) {
+  .PostsContainer {
+    gap: 90px;
+  }
 }

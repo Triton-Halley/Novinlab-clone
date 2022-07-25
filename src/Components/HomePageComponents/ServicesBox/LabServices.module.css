@@ -50,3 +50,9 @@
   display: flex;
   justify-content: center;
 }
+
+@media (max-width: 1600px) {
+  .container {
+    width: 80%;
+  }
+}

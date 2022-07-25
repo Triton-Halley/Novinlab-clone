@@ -43,3 +43,46 @@
 .ContentContainer strong {
   font-size: 1rem;
 }
+
+@media (max-width: 1700px) {
+  .BoxSection {
+    margin-top: -150px;
+  }
+  .container {
+    width: 85%;
+  }
+}
+
+@media (max-width: 1600px) {
+  .ContentContainer strong {
+    font-size: 0.84rem;
+    font-weight: bolder;
+  }
+
+  .ContentContainer p {
+    font-size: 0.9rem;
+  }
+  .BoxSection {
+    margin-top: -200px;
+  }
+  .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1400px) {
+  .ContentContainer strong {
+    font-size: 0.74rem;
+    font-weight: bolder;
+  }
+
+  .ContentContainer p {
+    font-size: 0.8rem;
+  }
+  .BoxSection {
+    margin-top: -250px;
+  }
+  .container {
+    width: 95%;
+  }
+}
