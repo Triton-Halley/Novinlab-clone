@@ -1,4 +1,4 @@
-import { Splide, SplideSlide } from "@splidejs/react-splide";
+import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 import { useRef } from "react";
 import "@splidejs/splide/css";
 import slideImage1 from "../../../assets/banner.jpg";
@@ -16,16 +16,18 @@ const HeroSlider = () => {
     <Splide
       className={classes.sliderContainer}
       options={{
-        rewind: true,
-        gap: "1rem",
+        // rewind: true,
+        // gap: "1rem",
         autoplay: false,
         lazyLoad1: true,
+        autoWidth: true,
+        // autoHeight: true,
       }}
       ref={sliderSplide}
       aria-label="My Favorite Images"
     >
       <SplideSlide className={classes.slide}>
-        <img src={slideImage1} alt="Image 1" />
+        <img src={slideImage1} alt="Slider-1" />
         <div className={classes["content-slide1"]}>
           <p className={classes.title}>راحتی را </p>
           <p className={classes.title}>با آزمایشگاه نوین تجربه کنید</p>
@@ -48,8 +50,9 @@ const HeroSlider = () => {
           </div>
         </div>
       </SplideSlide>
+
       <SplideSlide>
-        <img src={slideImage2} alt="Image 2" />
+        <img src={slideImage2} alt="Slider-2" />
         <div className={classes["content-slide1"]}>
           <p className={classes.title}>آرامش را </p>
           <p className={classes.title}>با آزمایشگاه نوین تجربه کنید </p>

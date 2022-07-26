@@ -84,3 +84,8 @@
     font-weight: 700;
   }
 }
+@media (max-width: 1200px) {
+  .content-slide1 {
+    transform: translate(-10vw, 19vh);
+  }
+}

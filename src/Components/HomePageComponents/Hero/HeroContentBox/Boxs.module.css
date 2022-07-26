@@ -11,9 +11,15 @@
   max-width: 100%;
   width: 82%;
   display: flex;
-  align-items: center;
+
   justify-content: center;
   /* gap: 2px; */
+}
+.containerBoxResponsive {
+  /* width: 100%; */
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
 }
 .BoxContainer {
   background-color: #fff;
@@ -84,5 +90,39 @@
   }
   .container {
     width: 95%;
+  }
+}
+@media (max-width: 1200px) {
+  /* .ContentContainer strong {
+    font-size: 0.74rem;
+    font-weight: bolder;
+  } */
+  /* 
+  .ContentContainer p {
+    font-size: 0.8rem;
+  } */
+  .BoxSection {
+    margin-top: -300px;
+  }
+  .container {
+    width: 95%;
+  }
+}
+
+@media (max-width: 1050px) {
+  .container {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  /* .BoxSection {
+    margin-top: -350px;
+  } */
+  .containerBoxResponsive {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+  }
+  .BoxContainer {
+    max-width: 100%;
   }
 }

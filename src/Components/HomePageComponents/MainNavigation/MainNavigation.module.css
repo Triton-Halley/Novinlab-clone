@@ -75,3 +75,17 @@
 .nav ul li a.active {
   color: #1e9984;
 }
+
+@media (max-width: 1200px) {
+  .logo img {
+    max-width: 5rem;
+  }
+  .nav ul li a {
+    font-size: 1rem;
+  }
+  .btn a {
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 1rem;
+  }
+}
