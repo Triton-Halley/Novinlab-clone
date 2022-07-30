@@ -18,5 +18,4 @@ You may also see any lint errors in the console.
 
 
 
-
-![Novinlab-react-relese-home-screenshot](https://user-images.githubusercontent.com/61544097/179403711-f8d9c530-10bc-4a36-b24e-960a02e5f3dd.png)
+![Novinlab-react-new-relese-home-screenshot](https://user-images.githubusercontent.com/61544097/181951931-9ea5c266-c026-488c-a27e-ef13a601ea6c.png)
