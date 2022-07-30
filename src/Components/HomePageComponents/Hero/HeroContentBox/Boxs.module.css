@@ -44,10 +44,10 @@
 }
 
 .ContentContainer p {
-  font-size: 0.9rem;
+  font-size: 1.5rem;
 }
 .ContentContainer strong {
-  font-size: 1rem;
+  font-size: 1.6rem;
 }
 
 @media (max-width: 1700px) {

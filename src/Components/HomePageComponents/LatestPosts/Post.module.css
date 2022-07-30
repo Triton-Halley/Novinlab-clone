@@ -21,7 +21,7 @@
   gap: 10px;
 }
 .content strong {
-  font-size: 1.2rem;
+  font-size: 1.9rem;
 }
 .content a {
   text-decoration: none;
@@ -29,7 +29,7 @@
   width: max-content;
   color: #1e9984;
   padding: 10px;
-  font-size: 0.7rem;
+  font-size: 1.3rem;
   border-radius: 10px;
   transition: all 0.3s;
 }
@@ -38,5 +38,5 @@
 }
 
 .content p {
-  font-size: 0.8rem;
+  font-size: 1.4rem;
 }

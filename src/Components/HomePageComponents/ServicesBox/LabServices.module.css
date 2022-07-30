@@ -20,7 +20,7 @@
   direction: rtl;
 }
 .SectionHeader h3 {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 .line {
   display: flex;
@@ -33,7 +33,7 @@
   background-color: black;
 }
 .line p {
-  font-size: 1.1rem;
+  font-size: 1.6rem;
   font-weight: 300;
 }
 .ServiceBoxContainer {

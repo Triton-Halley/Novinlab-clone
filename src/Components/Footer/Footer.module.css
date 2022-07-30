@@ -15,7 +15,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   gap: 5px;
-  font-size: 1rem;
+  font-size: 1.6rem;
 }
 .information .address {
   width: 100%;
@@ -25,7 +25,7 @@
 }
 
 .information ion-icon {
-  font-size: 1.4rem;
+  font-size: 2.2rem;
 }
 .information div {
   display: flex;
@@ -36,8 +36,6 @@
   text-decoration: none;
   color: #fff;
 }
-.map {
-}
 
 .socialMedia {
   width: 20%;
@@ -47,7 +45,7 @@
 }
 
 .socialMedia strong {
-  font-size: 2rem;
+  font-size: 3.2rem;
 }
 
 .socialMedia div {
@@ -58,16 +56,16 @@
 }
 .socialMedia div a {
   color: #fff;
-  font-size: 2rem;
+  font-size: 3.2rem;
 }
 
 @media (max-width: 1500px) {
   .socialMedia strong {
-    font-size: 1.7rem;
+    font-size: 2.7rem;
   }
 }
 @media (max-width: 1400px) {
   .socialMedia strong {
-    font-size: 1.3rem;
+    font-size: 2.1rem;
   }
 }

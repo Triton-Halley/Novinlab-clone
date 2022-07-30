@@ -11,7 +11,7 @@
   max-width: max-content;
 }
 .logo img {
-  max-width: 6rem;
+  max-width: 9.6rem;
 }
 .menu {
   width: 70%;
@@ -86,11 +86,11 @@
     max-width: 5rem;
   }
   .nav ul li a {
-    font-size: 1rem;
+    font-size: 1.6rem;
   }
   .btn a {
-    font-size: 0.8rem;
+    font-size: 1.4rem;
     font-weight: 700;
-    padding: 1rem;
+    padding: 1.6rem;
   }
 }
