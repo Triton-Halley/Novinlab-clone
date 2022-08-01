@@ -18,7 +18,7 @@ const HeroSlider = () => {
       options={{
         rewind: true,
         gap: "1rem",
-        autoplay: false,
+        autoplay: true,
         lazyLoad1: true,
         // autoWidth: true,
         arrows: false,
