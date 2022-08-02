@@ -1,11 +1,38 @@
+.Features {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.FeaturesHeader {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 2rem;
+}
+.FeaturesHeader .strong {
+  padding: 0.6rem 3rem;
+
+  border-radius: 2rem;
+  background-color: #fee5cf;
+  color: #f7b479;
+}
+.FeaturesHeader .HeaderTitle {
+  font-size: 2rem;
+}
+.FeaturesHeader div p {
+  color: #888;
+  font-size: 1.2rem;
+}
 .BoxSection {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -100px;
-  position: relative;
-  z-index: 1000;
 }
 .container {
   max-width: 100%;
@@ -22,25 +49,41 @@
   /* align-items: center; */
 }
 .BoxContainer {
-  background-color: #fff;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
   gap: 2rem;
-  box-shadow: 0 0 30px rgb(0 0 0 / 8%);
   border-radius: 8px;
   padding: 40px 45px;
   max-width: 30%;
   max-height: 100%;
-  overflow: hidden;
+
   align-self: stretch;
 }
-
+.DoctorsColor {
+  background-color: #b3aacf;
+}
+.SamplingColor {
+  background-color: #ebc89d;
+}
+.hygienicColor {
+  background-color: #cae299;
+}
+.IconContainer {
+  border-radius: 3rem;
+}
+.IconContainer img {
+  padding: 2.5rem;
+}
 .ContentContainer {
   direction: rtl;
   max-width: 50vw;
   height: 100%;
-
-  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: center;
 }
 
 .ContentContainer p {
@@ -52,7 +95,6 @@
 
 @media (max-width: 1700px) {
   .BoxSection {
-    margin-top: -150px;
   }
   .container {
     width: 85%;
@@ -69,7 +111,6 @@
     font-size: 0.9rem;
   }
   .BoxSection {
-    margin-top: -200px;
   }
   .container {
     width: 90%;
@@ -86,7 +127,6 @@
     font-size: 0.8rem;
   }
   .BoxSection {
-    margin-top: -250px;
   }
   .container {
     width: 95%;
@@ -102,7 +142,6 @@
     font-size: 0.8rem;
   } */
   .BoxSection {
-    margin-top: -300px;
   }
   .container {
     width: 95%;
