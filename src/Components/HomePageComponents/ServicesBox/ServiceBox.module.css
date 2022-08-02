@@ -1,15 +1,25 @@
 .boxContainer {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
   display: flex;
+  gap: 1rem;
+  box-shadow: 1rem 1rem 2rem 1rem rgb(179, 179, 179);
   flex-direction: column;
   text-align: right;
   max-width: 100%;
+  direction: rtl;
+  transition: all 0.3s ease-in-out;
+}
+.boxContainer:hover {
+  transform: scale(1.05);
 }
 .boxIcon {
   max-width: 100%;
 }
 
 .boxContainer div img {
-  max-width: 70px;
+  max-width: 7rem;
 }
 
 .boxContainer strong {
@@ -17,4 +27,33 @@
 }
 .boxContainer p {
   font-size: 1.4rem;
+}
+
+.btnContainer {
+  margin-top: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.btn {
+  width: fit-content;
+  padding: 1rem;
+  background-color: #fee5cf;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.btn a {
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #853e00;
+}
+
+.btn:hover {
+  background-color: #fcd3b0;
+}
+
+.btn:hover a {
+  color: #bd5a03;
 }
