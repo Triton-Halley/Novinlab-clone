@@ -63,9 +63,9 @@ const MainNavigation = () => {
               </li>
             </ul>
           </nav>
-          <div className={classes.logo}>
-            <img src={logo} alt="آیکون آزمایشگاه نوین" />
-          </div>
+        </div>
+        <div className={classes.logo}>
+          <img src={logo} alt="آیکون آزمایشگاه نوین" />
         </div>
       </header>
     </>
