@@ -16,10 +16,10 @@
 }
 .FeaturesHeader .strong {
   padding: 0.6rem 3rem;
-
+  font-size: 1.6rem;
   border-radius: 2rem;
   background-color: #fee5cf;
-  color: #f7b479;
+  color: #522905;
 }
 .FeaturesHeader .HeaderTitle {
   font-size: 2rem;
