@@ -1,11 +1,11 @@
 import { useRef } from "react";
 import classes from "./ThumbnailSlider.module.css";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
-import image1 from "../../assets/Doctors/doc_1.jpg";
-import image2 from "../../assets/Doctors/doc_2.jpg";
-import image3 from "../../assets/Doctors/doc_3.jpg";
-import image4 from "../../assets/Doctors/doc_4.jpg";
-import image5 from "../../assets/Doctors/doc_9.jpg";
+import image1 from "../../assets/pics/Hospital-beds.jpg";
+import image2 from "../../assets/pics/Lobby.jpg";
+import image3 from "../../assets/pics/medic.jpg";
+import image4 from "../../assets/pics/surgery room.jpg";
+import image5 from "../../assets/pics/Medical.jpg";
 const ThumbnailSlider = () => {
   const ThumbnailRef = useRef();
   const MainSliderRef = useRef();
@@ -18,38 +18,92 @@ const ThumbnailSlider = () => {
     MainSliderRef.current.sync(ThumbnailRef.current.splide);
   }
   function handler() {
-    console.log(ThumbnailRef);
+    console.log("hey");
   }
   return (
     <>
       <div className={classes.slider}>
         <Splide
+          className={classes.TopSlider}
           options={{
             type: "loop",
             perPage: 1,
             perMove: 1,
             gap: "1rem",
             pagination: false,
-            height: "100%",
-            width: "50%",
+            width: "80%",
             arrows: false,
+            autoplay: true,
           }}
+          onMove={handler}
           ref={MainSliderRef}
         >
-          <SplideSlide>
-            <img src={image1} alt="image1" />
+          <SplideSlide className={classes.slide}>
+            <div className={classes.ImageSlider}>
+              <div className={classes.overlay}>
+                {" "}
+                <div className={classes.overlayInside}>
+                  <div className={classes.overlayContent}>
+                    <strong>Image Title</strong>
+                    <p>This is Image description</p>
+                  </div>
+                </div>
+              </div>
+              <img src={image1} alt="image1" />
+            </div>
           </SplideSlide>
-          <SplideSlide>
-            <img src={image2} alt="image2" />
+          <SplideSlide className={classes.slide}>
+            <div className={classes.ImageSlider}>
+              <div className={classes.overlay}>
+                {" "}
+                <div className={classes.overlayInside}>
+                  <div className={classes.overlayContent}>
+                    <strong>Image Title</strong>
+                    <p>This is Image description</p>
+                  </div>
+                </div>
+              </div>
+              <img src={image2} alt="image2" />
+            </div>
           </SplideSlide>
-          <SplideSlide>
-            <img src={image3} alt="image3" />
+          <SplideSlide className={classes.slide}>
+            <div className={classes.ImageSlider}>
+              <div className={classes.overlay}>
+                <div className={classes.overlayInside}>
+                  <div className={classes.overlayContent}>
+                    <strong>Image Title</strong>
+                    <p>This is Image description</p>
+                  </div>
+                </div>
+              </div>
+              <img src={image3} alt="image3" />
+            </div>
           </SplideSlide>
-          <SplideSlide>
-            <img src={image4} alt="image4" />
+          <SplideSlide className={classes.slide}>
+            <div className={classes.ImageSlider}>
+              <div className={classes.overlay}>
+                <div className={classes.overlayInside}>
+                  <div className={classes.overlayContent}>
+                    <strong>Image Title</strong>
+                    <p>This is Image description</p>
+                  </div>
+                </div>
+              </div>
+              <img src={image4} alt="image4" />
+            </div>
           </SplideSlide>
-          <SplideSlide>
-            <img src={image5} alt="image5" />
+          <SplideSlide className={classes.slide}>
+            <div className={classes.ImageSlider}>
+              <div className={classes.overlay}>
+                <div className={classes.overlayInside}>
+                  <div className={classes.overlayContent}>
+                    <strong>Image Title</strong>
+                    <p>This is Image description</p>
+                  </div>
+                </div>
+              </div>
+              <img src={image5} alt="image5" />
+            </div>
           </SplideSlide>
         </Splide>
         <Splide
