@@ -142,7 +142,7 @@
 @media (max-width: 995px) {
   .openMenuBtn,
   .closeMenuBtn {
-    display: block;
+    display: flex;
   }
   .header {
     /* position: fixed; */
