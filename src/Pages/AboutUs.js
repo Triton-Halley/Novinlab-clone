@@ -9,7 +9,6 @@ const AboutUs = () => {
       <Hero />
       <AboutUsSection />
       <DoctorsSlider />
-      <LatestPosts />
       <Footer />
     </>
   );

@@ -5,7 +5,7 @@ const AboutUsSection = () => {
     <section className={classes.aboutUs}>
       <div className={classes.AboutUSContainer}>
         <div className={classes.AboutUsContent}>
-          <h1>تجربه برترین خدماتبا کلینیک ما</h1>
+          <h1>تجربه برترین خدمات با کلینیک ما</h1>
           <p>
             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
             استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در
