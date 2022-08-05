@@ -108,13 +108,14 @@ const ThumbnailSlider = () => {
         </Splide>
         <Splide
           options={{
-            type: "slide",
+            type: "loop",
             rewind: true,
             gap: "1rem",
             pagination: false,
             fixedWidth: 110,
             fixedHeight: 70,
             cover: true,
+            width: "80%",
             focus: "center",
             isNavigation: true,
             arrows: false,

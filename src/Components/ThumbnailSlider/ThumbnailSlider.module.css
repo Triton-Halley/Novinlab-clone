@@ -66,3 +66,9 @@
 .overlayContent strong {
   border-bottom: solid 3px #fff;
 }
+
+@media (max-width: 500px) {
+  .ImageSlider img {
+    object-position: right;
+  }
+}
