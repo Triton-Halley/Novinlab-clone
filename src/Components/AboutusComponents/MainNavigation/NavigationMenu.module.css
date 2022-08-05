@@ -2,12 +2,18 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 3rem;
+  gap: 4.8rem;
   padding: 0 40px;
   background-color: #fff;
   border-radius: 5px;
   z-index: 1000;
   box-shadow: 0 0 20px -10px rgb(0 0 0 / 80%);
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
 }
 .posAbsolute {
   width: 90%;
@@ -28,14 +34,14 @@
   max-width: max-content;
 }
 .logo img {
-  max-width: 6rem;
+  max-width: 9.6rem;
 }
 .menu {
   width: 70%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 1.5rem;
+  gap: 2.4rem;
 }
 .nav ul li a.active {
   color: #1e9984;
@@ -45,7 +51,7 @@
   align-items: center;
   justify-content: flex-end;
   list-style: none;
-  gap: 2rem;
+  gap: 3rem;
 }
 .nav ul li {
   transition: all 0.3s ease 0s;
@@ -53,7 +59,7 @@
 
 .nav ul li a {
   text-decoration: none;
-  font-size: 1.3rem;
+  font-size: 2.1rem;
   color: #333;
   cursor: pointer;
 }
@@ -81,4 +87,97 @@
   transform: translateX(-50%);
   pointer-events: none;
   opacity: 0;
+}
+.menuButtons {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+.openMenuBtn {
+  background-color: transparent;
+}
+.openMenuBtn img {
+  width: 32px;
+}
+.closeMenuBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1a353c;
+  padding: 0.9rem;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+.closeMenuBtn img {
+  width: 32px;
+  transition: all 0.3s;
+}
+.closeMenuBtn:hover img {
+  transform: rotateZ(360deg);
+}
+.openMenuBtn,
+.closeMenuBtn {
+  display: none;
+  border: none;
+  cursor: pointer;
+}
+.displayMenu {
+  transform: translateX(0) !important;
+  transition: all 0.5s ease-in-out;
+}
+@media (max-width: 1200px) {
+  .nav ul {
+    gap: 2rem;
+  }
+  .nav ul li a {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 995px) {
+  .openMenuBtn,
+  .closeMenuBtn {
+    display: flex;
+  }
+  .header {
+    /* position: fixed; */
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    background-color: #fff;
+  }
+  .container {
+    width: 200px;
+    position: fixed;
+    z-index: 1000;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    transform: translateX(150%);
+    background-color: #fff;
+    display: flex;
+    align-items: flex-end;
+    /* width: max-content; */
+    padding: 2rem;
+    gap: 3rem;
+    /* height: 100vh; */
+    flex-direction: column-reverse;
+    transition: all 0.5s ease-in-out;
+  }
+  .menu {
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column-reverse;
+  }
+  .nav ul {
+    align-items: flex-end;
+    flex-direction: column-reverse;
+  }
+  .menuButtons {
+    opacity: 1;
+    pointer-events: all;
+    visibility: visible;
+  }
+  .btn {
+    background-color: #e9f5f3;
+  }
 }
