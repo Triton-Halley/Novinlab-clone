@@ -1,6 +1,7 @@
 .sliderContainer {
   width: 74%;
-  height: 50vh;
+  height: max-content;
+  margin: 5rem;
   /* background-color: blue; */
   /* margin: 50px; */
 }
@@ -22,8 +23,8 @@
   text-align: center;
 }
 .header h2 {
-  font-size: 2rem;
+  font-size: 3.2rem;
 }
 .header p {
-  font-size: 1rem;
+  font-size: 1.6rem;
 }
