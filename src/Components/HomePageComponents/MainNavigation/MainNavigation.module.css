@@ -135,10 +135,7 @@
   pointer-events: all;
   visibility: visible;
 }
-.displayMenu {
-  transform: translateX(0) !important;
-  transition: all 0.5s ease-in-out;
-}
+
 @media (max-width: 995px) {
   .openMenuBtn,
   .closeMenuBtn {
@@ -183,4 +180,9 @@
   .btn {
     background-color: #e9f5f3;
   }
+}
+/* !important */
+.displayMenu {
+  transform: translateX(0);
+  transition: all 0.5s ease-in-out;
 }
