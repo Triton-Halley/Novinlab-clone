@@ -63,6 +63,7 @@
 }
 .btn a {
   font-size: 1.5rem;
+  font-weight: 700;
   text-decoration: none;
   color: #1e9984;
 }
@@ -80,32 +81,68 @@
   gap: 1rem;
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1300px) {
   .title {
-    font-size: 3.2rem;
-  }
-  .address {
-    font-size: 1.8rem;
-  }
-  .btn a {
-    font-size: 1.4rem;
+    font-size: 2.3rem;
     font-weight: 700;
-  }
-}
-@media (max-width: 1400px) {
-  .title {
-    font-size: 2.7rem;
+    color: #1e9984;
+    margin-right: 0.4rem;
   }
   .address {
     font-size: 1.7rem;
   }
   .btn a {
     font-size: 1.3rem;
-    font-weight: 700;
   }
 }
-@media (max-width: 1200px) {
-  .content-slide1 {
-    transform: translate(-10vw, 19vh);
+@media (max-width: 1050px) {
+  .title {
+    font-size: 1.8rem;
+  }
+  .address {
+    font-size: 1.5rem;
+  }
+  .btn a {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .sliderItemContainer {
+    width: 100%;
+  }
+  .title {
+    font-size: 1.6rem;
+  }
+  .address {
+    font-size: 1.3rem;
+  }
+  .btn a {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 1.4rem;
+  }
+  .address {
+    font-size: 1.2rem;
+  }
+  .btn a {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 700px) {
+  .sliderItemContainer {
+    width: 100%;
+    flex-direction: column;
+  }
+  .SliderContentContainer {
+    width: 100%;
+    justify-content: center;
+  }
+  .SliderContentContainer div {
+    align-items: center;
   }
 }

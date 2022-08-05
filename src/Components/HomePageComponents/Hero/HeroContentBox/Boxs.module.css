@@ -5,6 +5,7 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  margin-top: 4rem;
 }
 .FeaturesHeader {
   width: 100%;
@@ -36,7 +37,7 @@
 }
 .container {
   max-width: 100%;
-  width: 82%;
+  width: 100%;
   display: flex;
 
   justify-content: center;
@@ -92,63 +93,23 @@
 .ContentContainer strong {
   font-size: 1.6rem;
 }
-
-@media (max-width: 1700px) {
-  .BoxSection {
-  }
-  .container {
-    width: 85%;
-  }
-}
-
 @media (max-width: 1600px) {
+  .FeaturesHeader .HeaderTitle {
+    font-size: 1.8rem;
+  }
   .ContentContainer strong {
-    font-size: 0.84rem;
-    font-weight: bolder;
+    font-size: 1.4rem;
   }
-
   .ContentContainer p {
-    font-size: 0.9rem;
-  }
-  .BoxSection {
-  }
-  .container {
-    width: 90%;
-  }
-}
-
-@media (max-width: 1400px) {
-  .ContentContainer strong {
-    font-size: 0.74rem;
-    font-weight: bolder;
-  }
-
-  .ContentContainer p {
-    font-size: 0.8rem;
-  }
-  .BoxSection {
-  }
-  .container {
-    width: 95%;
-  }
-}
-@media (max-width: 1200px) {
-  /* .ContentContainer strong {
-    font-size: 0.74rem;
-    font-weight: bolder;
-  } */
-  /* 
-  .ContentContainer p {
-    font-size: 0.8rem;
-  } */
-  .BoxSection {
-  }
-  .container {
-    width: 95%;
+    font-size: 1.3rem;
   }
 }
 
 @media (max-width: 1050px) {
+  .Features {
+    display: block;
+    height: fit-content;
+  }
   .container {
     flex-direction: column;
     gap: 0.5rem;
@@ -163,5 +124,16 @@
   }
   .BoxContainer {
     max-width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .FeaturesHeader .HeaderTitle {
+    font-size: 1.4rem;
+  }
+  .FeaturesHeader .strong {
+    font-size: 1.4rem;
+  }
+  .FeaturesHeader div p {
+    font-size: 1rem;
   }
 }
