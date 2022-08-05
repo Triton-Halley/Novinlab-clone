@@ -18,7 +18,7 @@ const ThumbnailSlider = () => {
     MainSliderRef.current.sync(ThumbnailRef.current.splide);
   }
   function handler() {
-    console.log("hey");
+    MainSliderRef.current.sync(ThumbnailRef.current.splide);
   }
   return (
     <>
@@ -35,7 +35,6 @@ const ThumbnailSlider = () => {
             arrows: false,
             autoplay: true,
           }}
-          onMove={handler}
           ref={MainSliderRef}
         >
           <SplideSlide className={classes.slide}>
@@ -122,19 +121,19 @@ const ThumbnailSlider = () => {
           }}
           ref={ThumbnailRef}
         >
-          <SplideSlide>
+          <SplideSlide onClick={handler}>
             <img src={image1} alt="image1" />
           </SplideSlide>
-          <SplideSlide>
+          <SplideSlide onClick={handler}>
             <img src={image2} alt="image2" />
           </SplideSlide>
-          <SplideSlide>
+          <SplideSlide onClick={handler}>
             <img src={image3} alt="image3" />
           </SplideSlide>
-          <SplideSlide>
+          <SplideSlide onClick={handler}>
             <img src={image4} alt="image4" />
           </SplideSlide>
-          <SplideSlide>
+          <SplideSlide onClick={handler}>
             <img src={image5} alt="image5" />
           </SplideSlide>
         </Splide>
