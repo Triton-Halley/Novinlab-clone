@@ -36,3 +36,19 @@
   text-decoration: none;
   color: #fff;
 }
+
+@media (max-width: 1050px) {
+  .contactUs {
+    width: 70%;
+  }
+}
+@media (max-width: 850px) {
+  .contactUs {
+    width: 90%;
+  }
+}
+@media (max-width: 500px) {
+  .contactUs ul li {
+    font-size: 1.3rem;
+  }
+}
