@@ -21,16 +21,16 @@
   gap: 10px;
 }
 .faqHeader span {
-  font-size: 1.2rem;
+  font-size: 2rem;
 }
 .faqHeader strong {
-  font-size: 1.06rem;
+  font-size: 1.7rem;
 }
 .faqContent {
   padding: 20px;
   border: 1px solid;
   direction: rtl;
-  font-size: 0.9rem;
+  font-size: 1.5rem;
 }
 .faqContainerHeightClose {
   height: 72px;
