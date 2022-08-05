@@ -4,13 +4,10 @@ const Footer = () => {
   return (
     <div className={classes.FooterContainer}>
       <div className={classes.socialMedia}>
-        <strong>شبکه های اجتماعی</strong>
+        <strong>ما را در اینستاگرام دنبال کنید</strong>
         <div>
           <a href="https://www.instagram.com/Novinlabprofessional/">
             <ion-icon name="logo-instagram"></ion-icon>
-          </a>
-          <a href="https://wa.me/09021325472">
-            <ion-icon name="logo-whatsapp"></ion-icon>
           </a>
         </div>
       </div>
