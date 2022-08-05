@@ -1,10 +1,15 @@
 .header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   width: 100%;
   padding: 1rem;
   background-color: #d2ebe6;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 .logo {
   max-width: max-content;
@@ -83,14 +88,99 @@
 
 @media (max-width: 1200px) {
   .logo img {
-    max-width: 5rem;
+    max-width: 8rem;
   }
   .nav ul li a {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
   }
   .btn a {
-    font-size: 1.4rem;
-    font-weight: 700;
-    padding: 1.6rem;
+    font-size: 1.3rem;
+  }
+}
+.menuButtons {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+.openMenuBtn {
+  background-color: transparent;
+}
+.openMenuBtn img {
+  width: 32px;
+}
+.closeMenuBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1a353c;
+  padding: 0.9rem;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+.closeMenuBtn img {
+  width: 32px;
+  transition: all 0.3s;
+}
+.closeMenuBtn:hover img {
+  transform: rotateZ(360deg);
+}
+.openMenuBtn,
+.closeMenuBtn {
+  display: none;
+  border: none;
+  cursor: pointer;
+}
+.activeMenu {
+  opacity: 1;
+  pointer-events: all;
+  visibility: visible;
+}
+.displayMenu {
+  transform: translateX(0) !important;
+  transition: all 0.5s ease-in-out;
+}
+@media (max-width: 995px) {
+  .openMenuBtn,
+  .closeMenuBtn {
+    display: block;
+  }
+  .header {
+    /* position: fixed; */
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    background-color: #d2ebe6;
+  }
+  .container {
+    position: fixed;
+    z-index: 1000;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    justify-content: space-around;
+    transform: translateX(150%);
+    background-color: #fff;
+    display: flex;
+    align-items: flex-end;
+    width: max-content;
+    padding: 2rem;
+    gap: 2rem;
+    /* height: 100vh; */
+    flex-direction: column-reverse;
+    transition: all 0.5s ease-in-out;
+  }
+  .menu {
+    justify-content: flex-end;
+  }
+  .nav ul {
+    align-items: flex-end;
+    flex-direction: column-reverse;
+  }
+  .menuButtons {
+    opacity: 1;
+    pointer-events: all;
+    visibility: visible;
+  }
+  .btn {
+    background-color: #e9f5f3;
   }
 }

@@ -15,7 +15,7 @@ const Home = () => {
       <LabServices />
       {/* <LabSection /> */}
       <ThumbnailSlider />
-      <LatestPosts />
+      {/* <LatestPosts /> */}
       <Footer />
     </>
   );
