@@ -57,3 +57,12 @@
 .btn:hover a {
   color: #bd5a03;
 }
+
+@media (max-width: 1600px) {
+  .boxContainer strong {
+    font-size: 1.5rem;
+  }
+  .boxContainer p {
+    font-size: 1.4rem;
+  }
+}
