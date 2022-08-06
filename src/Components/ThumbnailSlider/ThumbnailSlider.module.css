@@ -5,7 +5,35 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.TopSlider {
+  height: 80%;
+  width: 80%;
+}
+
+.SecondSlider {
+  width: 80%;
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10px 0;
+  /* margin-bottom: 100px; */
+}
+.ThumbSlide {
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.ThumbSlide:hover {
+  transform: scale(1.05);
+}
+.ThumbSlide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .slide {

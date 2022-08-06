@@ -1,34 +1,26 @@
-import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
-import { useRef } from "react";
-import "@splidejs/splide/css";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper";
+// Import Swiper styles
+import "swiper/css/bundle";
+
 import slideImage1 from "../../../assets/Illustrations/Researchers-bro.png";
 import slideImage2 from "../../../assets/Illustrations/Hospital wheelchair-bro.png";
 import location from "../../../assets/icons/location.png";
 import arrowLeft from "../../../assets/icons/arrow-left.png";
 import classes from "./HeroSlider.module.css";
 const HeroSlider = () => {
-  const sliderSplide = useRef();
-
-  // const splide = new Splide(".splide");
-  // console.log(splide);
-
   return (
-    <Splide
+    <Swiper
       className={classes.sliderContainer}
-      options={{
-        rewind: true,
-        gap: "1rem",
-        autoplay: true,
-        lazyLoad1: true,
-        // autoWidth: true,
-        arrows: false,
-        pagination: false,
-        // autoHeight: true,
+      slidesPerView={1}
+      autoplay={{
+        delay: 5000,
+        disableOnInteraction: false,
       }}
-      ref={sliderSplide}
-      aria-label="My Favorite Images"
+      modules={[Autoplay]}
     >
-      <SplideSlide className={classes.slide}>
+      <SwiperSlide className={classes.slide}>
         <div className={classes.sliderItemContainer}>
           <div className={classes.sliderImageContainer}>
             <img src={slideImage1} alt="Slider-1" />
@@ -57,9 +49,9 @@ const HeroSlider = () => {
             </div>
           </div>
         </div>
-      </SplideSlide>
+      </SwiperSlide>
 
-      <SplideSlide className={classes.slide}>
+      <SwiperSlide className={classes.slide}>
         <div className={classes.sliderItemContainer}>
           <div className={classes.sliderImageContainer}>
             <img src={slideImage2} alt="Slider-2" />
@@ -86,8 +78,8 @@ const HeroSlider = () => {
             </div>
           </div>
         </div>
-      </SplideSlide>
-    </Splide>
+      </SwiperSlide>
+    </Swiper>
   );
 };
 

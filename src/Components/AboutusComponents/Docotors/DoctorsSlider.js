@@ -1,5 +1,6 @@
-import { Splide, SplideSlide } from "@splidejs/react-splide";
-// import "@splidejs/react-splide/css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper";
+import "swiper/css/bundle";
 import classes from "./DoctorsSlider.module.css";
 import doctor1 from "../../../assets/Doctors/doc_1.jpg";
 import doctor2 from "../../../assets/Doctors/doc_2.jpg";
@@ -74,28 +75,43 @@ const DoctorsSlider = () => {
         </p>
       </div>
 
-      <Splide
-        className={classes.sliderContainer}
-        options={{
-          perPage: 4,
-          perMove: 1,
-          type: "loop",
-          autoplay: true,
-          gap: 20,
+      <Swiper
+        slidesPerView={4}
+        spaceBetween={30}
+        autoplay={{
+          delay: 5000,
+          disableOnInteraction: false,
         }}
-        aria-label="My Favorite Images"
+        loop={true}
+        modules={[Autoplay]}
+        className={classes.sliderContainer}
+        breakpoints={{
+          1300: {
+            slidesPerView: 4,
+          },
+          995: {
+            slidesPerView: 3,
+          },
+          600: {
+            slidesPerView: 2,
+          },
+          300: {
+            slidesPerView: 1,
+          },
+        }}
       >
         {DUMMY_DATA.map((doctor) => {
           return (
-            <Doctor
-              key={doctor.id}
-              name={doctor.name}
-              job={doctor.job}
-              image={doctor.image}
-            />
+            <SwiperSlide key={doctor.id} className={classes.PerSlider}>
+              <Doctor
+                name={doctor.name}
+                job={doctor.job}
+                image={doctor.image}
+              />
+            </SwiperSlide>
           );
         })}
-      </Splide>
+      </Swiper>
     </div>
   );
 };
