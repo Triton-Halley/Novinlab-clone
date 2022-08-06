@@ -5,4 +5,4 @@ this is the first UnOptimized Relesed, I published on Netlify
 https://novinlabclone.netlify.app/ 
 if you want to access this relese just go on newDesignIdea branch and clone the project 
 ## Available Scripts :
-#npm start
+### `npm start`
