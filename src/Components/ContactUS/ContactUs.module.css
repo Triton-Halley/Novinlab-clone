@@ -7,6 +7,7 @@
   background-image: url("../../assets//contact-bg.jpg");
   background-position: center;
   background-size: contain;
+  margin: 5rem 0;
 }
 .contactUs {
   width: 50%;

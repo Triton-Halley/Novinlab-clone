@@ -87,3 +87,13 @@
     flex-direction: column-reverse;
   }
 }
+
+@media (max-width: 425px) {
+  .map iframe {
+    width: 300px;
+    height: 200px;
+  }
+  .information {
+    width: 300px;
+  }
+}
