@@ -1,3 +1,4 @@
+/*** Admin Panel Route */
 import Head from "next/head";
 const AdminPanel = () => {
   return (
