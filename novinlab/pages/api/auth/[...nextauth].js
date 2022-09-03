@@ -5,8 +5,10 @@ import CredentialsProvider from "next-auth/providers/credentials";
 export default NextAuth({
   session: {
     jwt: true,
+    // maxAge: 30 * 24 * 60 * 60,
+    // updateAge: 24 * 60 * 60,
   },
-  Providers: [
+  providers: [
     CredentialsProvider({
       async authorize(credentials) {
         //Connect to database and check data
@@ -15,8 +17,11 @@ export default NextAuth({
         // throw error in if check
 
         // this will mix with jwt
-
-        return { username: credentials.username };
+        console.log("credentials : ", credentials);
+        const user = {
+          name: credentials.username,
+        };
+        return user;
       },
     }),
   ],
