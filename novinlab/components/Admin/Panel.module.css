@@ -1,0 +1,7 @@
+.dashboard {
+  grid-template-columns: 10fr 1fr;
+}
+
+/* * {
+  overflow-y: hidden;
+} */
