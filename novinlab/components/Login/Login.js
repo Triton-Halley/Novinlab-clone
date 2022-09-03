@@ -1,10 +1,16 @@
 import { useState, useRef } from "react";
-import { signIn } from "next-auth/react";
+import { signIn, useSession } from "next-auth/react";
+import { useRouter } from "next/router";
 const LoginForm = () => {
   const userNameRef = useRef();
   const passwordRef = useRef();
   const [hasError, setHasError] = useState(false);
   const [isLogin, setIsLogin] = useState(true);
+  const router = useRouter();
+  const { data: session, status } = useSession();
+  console.log(session);
+  console.log(status);
+
   async function submitHandler(e) {
     e.preventDefault();
     const userName = userNameRef.current.value;
@@ -17,12 +23,16 @@ const LoginForm = () => {
     }
 
     //Request for Authentication
-    if (isLogin) {
+    if (status !== "authenticated") {
       const result = await signIn("credentials", {
         redirect: false,
         username: userName,
         password: password,
       });
+      console.log(result?.error);
+      if (!result?.error) {
+        router.replace("/7&DBZf2R238UN6WHCn3");
+      }
     }
   }
 
