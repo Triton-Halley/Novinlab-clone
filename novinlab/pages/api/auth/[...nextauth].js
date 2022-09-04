@@ -1,5 +1,8 @@
 import NextAuth from "next-auth/next";
 import CredentialsProvider from "next-auth/providers/credentials";
+import databaseConnection, { userData } from "../../../util/database";
+import mysql2 from "mysql2/promise";
+
 // import Provider;
 
 export default NextAuth({
@@ -12,16 +15,28 @@ export default NextAuth({
     CredentialsProvider({
       async authorize(credentials) {
         //Connect to database and check data
+        const users = await userData();
+        // const [data] = await databaseConnection.execute("SELECT * FROM users");
+        // databaseConnection.end();
+        console.log(users);
 
+        const { username: InpUsername, password: InpPassword } = credentials;
+        const user = users.find(
+          (item) => item.username == InpUsername && item.password == InpPassword
+        );
         // check error and handle wrong password or user not found
         // throw error in if check
+        if (!user) {
+          return null;
+        }
 
         // this will mix with jwt
-        console.log("credentials : ", credentials);
-        const user = {
-          name: credentials.username,
+        return {
+          identifier: user.id,
+          user: user.username,
+          mail: user.email,
+          number: user.phone,
         };
-        return user;
       },
     }),
   ],
