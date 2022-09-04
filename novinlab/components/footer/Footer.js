@@ -20,7 +20,7 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <div className={classes.map}>
+      {/* <div className={classes.map}>
         <iframe
           title="location"
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6497.991821520684!2d51.689125!3d35.479645!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2c9ac377dcac838!2z2KfYstmF2KfbjNi02q_Yp9mHINiq2K7Ytdi124wg2b7Yp9iq2YjYqNuM2YjZhNmI2pjbjCDZhtmI24zZhg!5e0!3m2!1sen!2sus!4v1658059582323!5m2!1sen!2sus"
@@ -28,7 +28,7 @@ const Footer = () => {
           height="300"
           loading="lazy"
         ></iframe>
-      </div>
+      </div> */}
       <div className={classes.information}>
         <Image src={logo} alt="آزمایشگاه نوین" width={325} height={90} />
         <strong>آزمایشگاه نوین</strong>
